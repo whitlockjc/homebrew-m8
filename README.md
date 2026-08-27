@@ -11,6 +11,7 @@ Currently included:
 
 ```sh
 brew tap whitlockjc/m8
+brew trust --formula whitlockjc/m8/m8c
 brew install m8c
 ```
 
