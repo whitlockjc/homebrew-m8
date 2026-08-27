@@ -1,13 +1,16 @@
-# Homebrew tap for m8c
+# Homebrew tap for M8 tools
 
-This repository provides a Homebrew formula for
-[m8c](https://github.com/laamaa/m8c), a remote display client for the
-Dirtywave M8 Tracker.
+This repository provides Homebrew formulae for Dirtywave M8-related tools.
+
+Currently included:
+
+- [m8c](https://github.com/laamaa/m8c), a remote display client for the
+  Dirtywave M8 Tracker.
 
 ## Installation
 
 ```sh
-brew tap whitlockjc/m8c
+brew tap whitlockjc/m8
 brew install m8c
 ```
 
@@ -20,6 +23,6 @@ brew upgrade m8c
 
 ## Formula maintenance
 
-The formula is maintained here as an unofficial tap. If upstream wants to own
-Homebrew distribution in the future, this repository can be transferred or the
-formula can be moved to an upstream-owned tap.
+This tap is maintained unofficially. If upstream projects want to own Homebrew
+distribution in the future, the relevant formulae can be transferred or moved to
+upstream-owned taps.
