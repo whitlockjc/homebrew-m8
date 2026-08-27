@@ -10,8 +10,12 @@ class M8c < Formula
   depends_on "sdl3"
 
   def install
+    inreplace "src/gamepads.c",
+              'snprintf(db_filename, sizeof(db_filename), "%sgamecontrollerdb.txt", SDL_GetBasePath());',
+              "snprintf(db_filename, sizeof(db_filename), \"#{pkgshare}/gamecontrollerdb.txt\");"
+
     system "make", "CC=#{ENV.cc}", "PREFIX=#{prefix}", "install"
-    bin.install "gamecontrollerdb.txt"
+    pkgshare.install "gamecontrollerdb.txt"
   end
 
   test do
