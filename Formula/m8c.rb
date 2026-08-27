@@ -11,6 +11,7 @@ class M8c < Formula
 
   def install
     system "make", "CC=#{ENV.cc}", "PREFIX=#{prefix}", "install"
+    bin.install "gamecontrollerdb.txt"
   end
 
   test do
